@@ -59,4 +59,13 @@ public class TanulmanyiVerseny {
         return megnevezes + " (" + tantargy + "), " + kezdesiDatum.toString()
                 + " " + kezdesiIdo.toString() + "-" + befejezesiIdo.toString();
     }
+
+    public void idoCsere(){
+        if(kezdesiIdo.compareTo(befejezesiIdo) > 0) {
+            LocalTime tmp = kezdesiIdo;
+            kezdesiIdo = befejezesiIdo;
+            befejezesiIdo = tmp;
+            System.out.println("Kezdési idő javítva!");
+        }
+    }
 }
