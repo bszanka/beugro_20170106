@@ -6,14 +6,14 @@ import java.util.Objects;
 
 public class TanulmanyiVerseny {
     protected String megnevezes;
-    protected String tantargy = "informatika";
+    protected String tantargy;
     protected LocalDate kezdesiDatum;
     protected LocalTime kezdesiIdo;
     protected LocalTime befejezesiIdo;
 
-    public TanulmanyiVerseny(String megnevezes, LocalDate kezdesiDatum, LocalTime kezdesiIdo, LocalTime befejezesiIdo) {
+    public TanulmanyiVerseny(String megnevezes, String tantargy, LocalDate kezdesiDatum, LocalTime kezdesiIdo, LocalTime befejezesiIdo) {
         this.megnevezes = megnevezes;
-        this.tantargy = "informatika";
+        this.tantargy = tantargy;
         this.kezdesiDatum = kezdesiDatum;
         this.kezdesiIdo = kezdesiIdo;
         this.befejezesiIdo = befejezesiIdo;
